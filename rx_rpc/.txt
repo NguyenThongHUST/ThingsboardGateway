@@ -1,0 +1,12 @@
+
+
+msg = {
+    "serialNumber": "SN-002",
+    "sensorType": "Thermometer",
+    "sensorModel": "T1000",
+    "temp": 42,
+    "hum": 50
+}
+
+msg = json.dumps(msg)
+# print(msg)
