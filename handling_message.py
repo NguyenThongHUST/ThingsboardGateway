@@ -15,6 +15,9 @@ def on_connect(client, userdata, flags, rc):
 
 def on_message(client, userdata, msg):
     print(f"Received `{msg.payload.decode()}` from `{msg.topic}` topic")
+    msg_topic = msg.topic
+    msg_topic = msg_topic.replace("request", "respond")
+    print(msg_topic)
 
 
 client = mqtt.Client()
